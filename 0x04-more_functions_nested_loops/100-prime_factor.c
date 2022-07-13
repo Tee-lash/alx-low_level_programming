@@ -1,33 +1,25 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * print_triangle - check for a digit
- * @size: integer type
- * Return: void
+ * main - print largest prime factor of a fixed numbers
+ *
+ * Return: Always 0.
  */
-
-void print_triangle(int size)
+int main(void)
 {
-	int i = 1, ii;
 
-	while (i <= size && size > 0)
+	long i, num;
+
+	num = 612852475143;
+
+	for (i = 3; i < num; i += 2)
 	{
-		ii = 0;
-		while (ii < size - i)
+		if (num % i == 0)
 		{
-			_putchar(' ');
-			ii++;
+			num /= i;
 		}
-		ii = 0;
-		while (ii < i)
-		{
-			_putchar('#');
-			ii++;
-		}
-
-		_putchar('\n');
-		i++;
 	}
-	if (i == 1)
-		_putchar('\n');
+	printf("%ld\n", num);
+
+	return (0);
 }
