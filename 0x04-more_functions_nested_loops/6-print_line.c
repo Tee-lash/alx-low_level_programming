@@ -1,28 +1,19 @@
 #include "main.h"
 
 /**
- * print_diagonal - check for a digit
- * @n: number of \\ to be printed
+ * print_line - check for a digit
+ * @n: number of _ to be printed
  * Return: void
  */
 
-void print_diagonal(int n)
+void print_line(int n)
 {
-	int i = 0, ii;
+	int i = 0;
 
 	while (i < n && n > 0)
 	{
-		ii = 0;
-		while (ii < i)
-		{
-			_putchar(' ');
-			ii++;
-		}
-
-		_putchar('\\');
-		_putchar('\n');
+		_putchar('_');
 		i++;
 	}
-	if (i == 0)
-		_putchar('\n');
+	_putchar('\n');
 }
