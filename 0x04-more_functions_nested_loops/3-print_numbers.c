@@ -1,14 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * mul - multiplies two integers
- * @a: print int
- * @b: print int
- * Return: Always 0.
+ * print_numbers -print numbers
+ * return: Always 0
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-		return (a * b);
+int i;
+
+i = 0;
+while (i < 10)
+{
+_putchar (i + '0');
+i++;
+}
+
+_putchar ('\n');
 }
