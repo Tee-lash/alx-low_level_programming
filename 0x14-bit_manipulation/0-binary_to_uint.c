@@ -2,9 +2,9 @@
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
- * @b: this points to a string that creates binary.
+ * @b: pointer to a string containing a binary number
  *
- * Return: returns 0 on error or unsigned int with binary number
+ * Return: unsigned int with decimal value of binsry number, or 0 if error
  */
 unsigned int binary_to_uint(const char *b)
 {
