@@ -1,0 +1,2 @@
+bit manipulation readme file
+
